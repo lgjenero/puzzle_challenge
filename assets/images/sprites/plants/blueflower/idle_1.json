@@ -1,0 +1,205 @@
+{"frames": [
+
+{
+	"filename": "BlueFlower_00036",
+	"frame": {"x":0,"y":0,"w":312,"h":305},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":59,"y":74,"w":312,"h":305},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00037",
+	"frame": {"x":312,"y":0,"w":311,"h":306},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":73,"w":311,"h":306},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00038",
+	"frame": {"x":623,"y":0,"w":311,"h":307},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":72,"w":311,"h":307},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00039",
+	"frame": {"x":934,"y":0,"w":310,"h":307},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":61,"y":72,"w":310,"h":307},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00040",
+	"frame": {"x":1244,"y":0,"w":310,"h":308},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":61,"y":71,"w":310,"h":308},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00041",
+	"frame": {"x":1554,"y":0,"w":309,"h":309},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":70,"w":309,"h":309},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00042",
+	"frame": {"x":0,"y":309,"w":308,"h":310},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":63,"y":69,"w":308,"h":310},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00043",
+	"frame": {"x":308,"y":309,"w":308,"h":311},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":63,"y":68,"w":308,"h":311},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00044",
+	"frame": {"x":616,"y":309,"w":307,"h":311},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":64,"y":68,"w":307,"h":311},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00045",
+	"frame": {"x":923,"y":309,"w":306,"h":312},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":65,"y":67,"w":306,"h":312},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00046",
+	"frame": {"x":1229,"y":309,"w":305,"h":313},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":66,"w":305,"h":313},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00047",
+	"frame": {"x":1534,"y":309,"w":305,"h":314},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":65,"w":305,"h":314},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00048",
+	"frame": {"x":0,"y":623,"w":304,"h":315},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":64,"w":304,"h":315},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00049",
+	"frame": {"x":304,"y":623,"w":303,"h":316},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":68,"y":63,"w":303,"h":316},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00050",
+	"frame": {"x":607,"y":623,"w":302,"h":317},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":62,"w":302,"h":317},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00051",
+	"frame": {"x":909,"y":623,"w":301,"h":318},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":61,"w":301,"h":318},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00052",
+	"frame": {"x":1210,"y":623,"w":301,"h":319},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":60,"w":301,"h":319},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00053",
+	"frame": {"x":1511,"y":623,"w":300,"h":320},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":59,"w":300,"h":320},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00054",
+	"frame": {"x":0,"y":943,"w":299,"h":321},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":58,"w":299,"h":321},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00055",
+	"frame": {"x":299,"y":943,"w":299,"h":322},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":57,"w":299,"h":322},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00056",
+	"frame": {"x":598,"y":943,"w":298,"h":323},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":73,"y":56,"w":298,"h":323},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00057",
+	"frame": {"x":896,"y":943,"w":297,"h":324},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":55,"w":297,"h":324},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00058",
+	"frame": {"x":1193,"y":943,"w":297,"h":325},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":54,"w":297,"h":325},
+	"sourceSize": {"w":384,"h":384}
+},
+{
+	"filename": "BlueFlower_00059",
+	"frame": {"x":1490,"y":943,"w":296,"h":325},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":75,"y":54,"w":296,"h":325},
+	"sourceSize": {"w":384,"h":384}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "blue_flowerhalf size-1.png",
+	"format": "RGBA8888",
+	"size": {"w":1863,"h":1268},
+	"scale": "0.5",
+	"related_multi_packs": [ "blue_flowerhalf size-0.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:43952e7d7e15781fd284635ef4bfc5a0:0cd68ba6da2223e5fc94e4778d5e83db:c71f19e3b6640c2478f035932acd05f4$"
+}
+}

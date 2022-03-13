@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="128" tileheight="128" infinite="0" nextlayerid="14" nextobjectid="63">
+ <tileset firstgid="1" name="Platform_Tileset" tilewidth="128" tileheight="128" tilecount="49" columns="7">
+  <image source="../images/tiles/Mossy - TileSet_128.png" width="896" height="896"/>
+ </tileset>
+ <tileset firstgid="50" name="Background" tilewidth="128" tileheight="128" tilecount="144" columns="12">
+  <image source="../images/tiles/Mossy - DecorationBackground_128.png" width="1536" height="1536"/>
+ </tileset>
+ <layer id="6" name="Tiles" width="12" height="12" locked="1">
+  <data encoding="csv">
+50,51,52,53,54,55,56,57,58,59,60,61,
+62,63,64,65,66,67,68,69,70,71,72,73,
+74,75,76,77,78,79,80,81,82,83,84,85,
+86,87,88,89,90,91,92,93,94,95,96,97,
+98,99,100,101,102,103,104,105,106,107,108,109,
+110,111,112,113,114,115,116,117,118,119,120,121,
+122,123,124,125,126,127,128,129,130,131,132,133,
+134,135,136,137,138,139,140,141,142,143,144,145,
+146,147,148,149,150,151,152,153,154,155,156,157,
+158,159,160,161,162,163,164,165,166,167,168,169,
+170,171,172,173,174,175,176,177,178,179,180,181,
+182,183,184,185,186,187,188,189,190,191,192,193
+</data>
+ </layer>
+ <layer id="1" name="Decorations" width="12" height="12" locked="1">
+  <data encoding="csv">
+5,16,16,16,16,16,16,16,16,16,16,6,
+21,24,0,0,0,0,0,0,0,0,0,8,
+10,0,22,35,0,33,23,32,3,0,1,13,
+10,0,0,47,23,49,0,15,17,0,8,9,
+12,3,0,0,0,0,0,0,0,0,15,6,
+5,38,24,0,1,3,0,0,0,0,0,8,
+10,0,0,22,39,38,23,23,35,0,0,8,
+10,0,25,0,0,0,0,0,47,24,0,8,
+10,0,0,0,0,0,0,0,0,0,1,13,
+10,0,0,1,2,2,2,3,0,0,8,9,
+10,0,0,8,9,9,9,12,2,2,13,9,
+12,2,2,13,9,9,9,9,9,9,9,9
+</data>
+ </layer>
+ <objectgroup id="11" name="Decorations" locked="1"/>
+ <objectgroup id="7" name="Collider" locked="1">
+  <object id="1" x="409.5" y="1171.17" width="586.951" height="346.71"/>
+  <object id="2" x="460" y="788" width="654" height="60"/>
+  <object id="5" x="1434.21" y="94.1963" width="94.1963" height="1428.14"/>
+  <object id="6" x="1014.89" y="1312.67" width="297.782" height="212.701"/>
+  <object id="7" x="1312.67" y="1054.39" width="136.737" height="467.943"/>
+  <object id="8" x="1320" y="282" width="122" height="280"/>
+  <object id="9" x="24.3087" y="1431.18" width="391.978" height="94.1963"/>
+  <object id="11" x="3.03859" y="85.0805" width="97.2349" height="1336.98"/>
+  <object id="12" x="109.389" y="549.985" width="121.544" height="179.277"/>
+  <object id="13" x="240" y="664" width="64" height="60"/>
+  <object id="15" x="116" y="150" width="60" height="60"/>
+  <object id="16" x="346.399" y="285.627" width="148.891" height="60.7718"/>
+  <object id="17" x="416" y="420" width="322" height="45"/>
+  <object id="18" x="674.567" y="285.627" width="461.866" height="66.849"/>
+  <object id="19" x="932.847" y="355.515" width="200.547" height="124.582"/>
+  <object id="41" x="11.236" y="14.9813" width="1516.85" height="71.161"/>
+  <object id="56" x="268" y="924" width="110" height="50"/>
+  <object id="60" x="548.347" y="672.876" width="187.317" height="115.111"/>
+  <object id="62" x="1071.33" y="930" width="128" height="38.5823"/>
+ </objectgroup>
+ <objectgroup id="8" name="Objects" locked="1">
+  <object id="22" name="Player" type="wizard" x="128" y="1000" width="256" height="256"/>
+  <object id="52" name="Enemy" type="slime" x="1070" y="1200" width="128" height="128">
+   <properties>
+    <property name="slimetype" value="orange"/>
+   </properties>
+  </object>
+  <object id="54" name="Enemy" type="slime" x="800" y="170" width="128" height="128">
+   <properties>
+    <property name="slimetype" value="green"/>
+   </properties>
+  </object>
+  <object id="57" name="Actionable" type="lever" x="256" y="824" width="128" height="128"/>
+ </objectgroup>
+ <layer id="12" name="Overlay" width="12" height="12" locked="1">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="OverlayDecorations" width="12" height="12" locked="1">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="OverlayDecorations" locked="1">
+  <object id="23" name="Decoration" type="plant" x="1000" y="1000" width="384" height="384">
+   <properties>
+    <property name="planttype" value="blueflower"/>
+   </properties>
+  </object>
+  <object id="26" name="Decoration" type="plant" x="480" y="220" width="256" height="256">
+   <properties>
+    <property name="planttype" value="windplant"/>
+   </properties>
+  </object>
+  <object id="30" name="Decoration" type="plant" x="830" y="570" width="256" height="256">
+   <properties>
+    <property name="planttype" value="plant"/>
+   </properties>
+  </object>
+  <object id="32" name="Decoration" type="plant" x="500" y="990" width="256" height="256">
+   <properties>
+    <property name="planttype" value="multiplant"/>
+   </properties>
+  </object>
+  <object id="35" name="Decoration" type="plant" x="1240" y="860.05" width="256" height="256">
+   <properties>
+    <property name="planttype" value="windplant"/>
+   </properties>
+  </object>
+  <object id="46" name="Decoration" type="plant" x="48" y="340" width="256" height="256">
+   <properties>
+    <property name="planttype" value="waveplant"/>
+   </properties>
+  </object>
+  <object id="49" name="Decoration" type="plant" x="932" y="100" width="256" height="256">
+   <properties>
+    <property name="planttype" value="smallplant"/>
+   </properties>
+  </object>
+  <object id="58" name="Decoration" type="plant" x="30" y="1240" width="256" height="256">
+   <properties>
+    <property name="planttype" value="waveplant"/>
+   </properties>
+  </object>
+  <object id="61" name="Decoration" type="plant" x="520" y="480" width="256" height="256">
+   <properties>
+    <property name="planttype" value="smallplant"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

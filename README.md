@@ -1,126 +1,155 @@
-# template
+# Slide Puzzle
 
-This template is to reduce the boilerplate involved in setting up a new Flutter project. This template repository contains multiple branches, each with successively more configuration.
+![Photo Booth Header][logo]
 
-## base
+![coverage][coverage_badge]
+[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
+[![License: MIT][license_badge]][license_link]
 
-- Basic project via Flutter create
-	- Lock Flutter version to latest beta
-	- Global Flutter error handlers
-	- Support for Android release signing
-	- Updated .gitignore
-- Flavors
-	- `development`, `staging`, `production`
-	- Custom bundle id, display name, and launcher icons for each
-- VGV static analysis rules
-	- Pedantic package
-	- Custom VGV rules
-- Shared IntelliJ configurations
-	- Flavor run configurations
-	- Shared code styles
-	- Shared dictionary
-- Github configurations
-	- Codeowners file
-	- Pull request template
-	- Workflow that runs Flutter static analysis and tests on every pull request
+A slide puzzle built for [Flutter Challenge](https://flutterhack.devpost.com/).
 
-## firebase
+*Built by [Very Good Ventures][very_good_ventures_link] in partnership with Google.*
 
-- All of `base`, plus flavor-specific Firebase configurations
+*Created using [Very Good CLI][very_good_cli_link].*
 
+---
 
-## How to Use
+## Getting Started 🚀
 
-1. Clone the desired branch of this repo.
-1. Update the bundle id, package name, and display name. At the root of the repo, run:
+To run the project either use the launch configuration in VSCode/Android Studio or use the following command:
 
-	```
-	./replace.py -o com.flutter.template -n com.domain.yourapp
-	./replace.py -o template -n yourapp
-	./replace.py -o AppName -n YourApp
-	```
-1. Rename the folders in `android/app/src/main/kotlin` to represent your app's bundle id.
+```sh
+$ flutter run -d chrome
+```
 
-You should now be able to run your app on both iOS and Android, in all 3 flavors.
+---
 
-## Continous Integration
+## Running Tests 🧪
 
-This template comes with a Github Action workflow at `.github/workflows/main.yaml` that runs `flutter analyze` and `flutter test` on every pull request. This workflow uses the latest version of [flutter-action](https://github.com/marketplace/actions/flutter-action). The `flutter-version` in this file must be kept in sync with the one specified in `pubspec.yaml`.
+To run all unit and widget tests use the following command:
 
-When using this template for your own Flutter repo, you should configure Github to require this workflow as a precondition for merging pull requests. Go to `Settings` → `Branches` → `Branch Protection Rules` and select `Require status checks to pass before merging` for your branches.
+```sh
+$ flutter test --coverage --test-randomize-ordering-seed random
+```
 
-## Launcher Icons
+To view the generated coverage report you can use [lcov](https://github.com/linux-test-project/lcov).
 
-Create a 1024x1024px graphic to use for the icon, one for every flavor.
+```sh
+# Generate Coverage Report
+$ genhtml coverage/lcov.info -o coverage/
 
-### iOS
+# Open Coverage Report
+$ open coverage/index.html
+```
 
-1. Go to [https://appicon.co](https://appicon.co) and upload the graphic.
-2. Select all options except `Mac` and `Android` and click `Generate`.
-3. Download and open the resulting `AppIcons.zip` file.
-4. Open the resulting `Assets.xcassets` folder.
-5. Locate the `AppIcon.appiconset` folder.
-6. Open Xcode and in the Project Navigator go to `Runner` → `Runner` → `Assets.xcassets`.
-7. Delete the existing `AppIcon` you wish to replace.
-8. Rename the folder in step 5 to `AppIcon-Development.appiconset` or `AppIcon-Staging.appiconset` if updating the non-production icon.
-9. Drag and drop the folder into Xcode next to the other icons assets.
-10. Repeat steps 7-9 for other flavors.
+---
 
-### Android
+## Working with Translations 🌐
 
-1. Open the `android` folder in Android Studio as a separate project.
-2. In the `Project` window, select `Project` view.
-3. Navigate to `android` → `app` → `src`.
-4. For every flavor folder (`production` is `main`), right-click the `res` folder and select `New` → `Image Asset`.
-5. Go to `Foreground Layer` → `Source Asset` → `Path` and select the original icon graphic you created for the flavor.
-6. Go to `Background Layer` → `Source Asset` → `Asset Type` and select `Color`.
-7. Click on the color button and enter a suitable color for the background layer. If not sure just select white.
-8. Click the `Next` button.
-9. Select the `Res Directory` that matches the flavor you are updating. For `production`, select `main`.
-10. Click the `Finish` button.
-11. Repeat steps 3-10 for the other flavors.
+This project relies on [flutter_localizations][flutter_localizations_link] and follows the [official internationalization guide for Flutter][internationalization_link].
 
-## Debug Builds
+### Adding Strings
 
-1. Install the [Flutter SDK](https://flutter.dev/docs/get-started/install) and follow all instructions
-1. Set your Flutter channel to `beta` by running `flutter channel beta`
-1. Android Studio is the preferred IDE for this project. Install [Android Studio](https://developer.android.com/studio) and install the `Flutter` plugin.
-1. Install [Cocoapods](https://cocoapods.org) by running `sudo gem install cocoapods`.
-1. Open the repo folder in Android Studio, select a flavor from the run configuration drop-down, and select the `Run` or `Debug` command to run the app in the selected simulator/emulator.
-1. If you get an error, verify that your Flutter version (`flutter --version`) is equal to the version specified in the `pubspec.yml` file.
+1. To add a new localizable string, open the `app_en.arb` file at `lib/l10n/arb/app_en.arb`.
 
-## Release Builds
+```arb
+{
+    "@@locale": "en",
+    "counterAppBarTitle": "Counter",
+    "@counterAppBarTitle": {
+        "description": "Text shown in the AppBar of the Counter Page"
+    }
+}
+```
 
-### iOS
+2. Then add a new key/value and description
 
-Coming soon 
+```arb
+{
+    "@@locale": "en",
+    "counterAppBarTitle": "Counter",
+    "@counterAppBarTitle": {
+        "description": "Text shown in the AppBar of the Counter Page"
+    },
+    "helloWorld": "Hello World",
+    "@helloWorld": {
+        "description": "Hello World Text"
+    }
+}
+```
 
-### Android
+3. Use the new string
 
-1. When creating a new app, generate a new keystore in the `android/app` folder. *Do* commit this file to source control.
+```dart
+import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 
-	```
-	keytool -genkey -v -keystore app.keystore -alias app -storepass password -keyalg RSA -keysize 2048 -validity 10000	
-	```
-1. In the `android/` folder, create a `key.properties` file containing the keystore password in the form of `storePassword=xxx`. *Do not* commit this file to source control (it is .gitignored by default).
-1. Run `flutter build appbundle --flavor [flavor]` from the root of the repo, where `flavor` is `development`, `staging`, or `production`. Alternatively, a CI tool can provide the store password in the form of an environment variable named `storePassword`.
-1. A signed Android app bundle will be generated, ready for distribution.
+@override
+Widget build(BuildContext context) {
+  final l10n = context.l10n;
+  return Text(l10n.helloWorld);
+}
+```
 
-## Troubleshooting
+### Adding Supported Locales
 
-### Android
+Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info.plist` to include the new locale.
 
-If you run into issues running on Android, follow the following steps:
+```xml
+    ...
 
-1. Run `flutter clean` from the root of the repo.
-1. In Android Studio, go to `File` → `Invalidate Caches and Restart`.
-1. Select `Invalidate and Restart`.
+    <key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>es</string>
+	</array>
 
-### iOS
+    ...
+```
 
-If you run into issues running on iOS, follow the following steps:
+### Adding Translations
 
-1. Run `flutter clean` from the root of the repo.
-1. Open Xcode → `Preferences` → `Locations` → `Derived Data`. Open this folder in Finder. Close Xcode. Delete the contents of this folder. Restart Xcode.
-1. Run `pod repo update` to update your local cache of the Cocapods spec repository.
-1. In the `ios` folder, run `pod update [pod]` replacing `pod` with the name of the pod giving you trouble, i.e. `Firebase/RemoteConfig`.
+1. For each supported locale, add a new ARB file in `lib/l10n/arb`.
+
+```
+├── l10n
+│   ├── arb
+│   │   ├── app_en.arb
+│   │   └── app_es.arb
+```
+
+2. Add the translated strings to each `.arb` file:
+
+`app_en.arb`
+
+```arb
+{
+    "@@locale": "en",
+    "counterAppBarTitle": "Counter",
+    "@counterAppBarTitle": {
+        "description": "Text shown in the AppBar of the Counter Page"
+    }
+}
+```
+
+`app_es.arb`
+
+```arb
+{
+    "@@locale": "es",
+    "counterAppBarTitle": "Contador",
+    "@counterAppBarTitle": {
+        "description": "Texto mostrado en la AppBar de la página del contador"
+    }
+}
+```
+
+[coverage_badge]: coverage_badge.svg
+[flutter_localizations_link]: https://api.flutter.dev/flutter/flutter_localizations/flutter_localizations-library.html
+[internationalization_link]: https://flutter.dev/docs/development/accessibility-and-localization/internationalization
+[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[license_link]: https://opensource.org/licenses/MIT
+[very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
+[very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
+[very_good_cli_link]: https://github.com/VeryGoodOpenSource/very_good_cli
+[very_good_ventures_link]: https://verygood.ventures/
+[logo]: art/header.png

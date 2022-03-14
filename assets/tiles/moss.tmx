@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="128" tileheight="128" infinite="0" nextlayerid="14" nextobjectid="63">
- <tileset firstgid="1" name="Platform_Tileset" tilewidth="128" tileheight="128" tilecount="49" columns="7">
-  <image source="../images/tiles/Mossy - TileSet_128.png" width="896" height="896"/>
+ <tileset firstgid="1" name="Platform_Tileset" tilewidth="64" tileheight="64" tilecount="49" columns="7">
+  <image source="../images/tiles/MossyTileSet.png" width="448" height="448"/>
  </tileset>
- <tileset firstgid="50" name="Background" tilewidth="128" tileheight="128" tilecount="144" columns="12">
-  <image source="../images/tiles/Mossy - DecorationBackground_128.png" width="1536" height="1536"/>
+ <tileset firstgid="50" name="Background" tilewidth="64" tileheight="64" tilecount="144" columns="12">
+  <image source="../images/tiles/MossyDecorationBackground.png" width="768" height="768"/>
  </tileset>
  <layer id="6" name="Tiles" width="12" height="12" locked="1">
   <data encoding="csv">

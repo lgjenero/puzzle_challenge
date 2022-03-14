@@ -139,5 +139,9 @@
     "dashatarSuccessShareText": "Just solved the #FlutterPuzzleHack! Check it out ↓",
     "@dashatarSuccessShareText": {
         "description": "The text to share for this Flutter Puzzle challenge, shown in the Dashatar success state"
+    },
+    "wasdInstructions": "Use WASD to move",
+    "@wasdInstructions": {
+        "description": "The text to explain the character controls"
     }
 }

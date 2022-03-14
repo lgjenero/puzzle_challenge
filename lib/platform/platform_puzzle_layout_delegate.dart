@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:very_good_slide_puzzle/flame/flame_puzzle.dart';
+import 'package:very_good_slide_puzzle/flame/views/wasd_instructions.dart';
 import 'package:very_good_slide_puzzle/joystick/joystick_view.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
 import 'package:very_good_slide_puzzle/layout/layout.dart';
@@ -192,6 +193,6 @@ class PlatformPuzzleJoystick extends StatelessWidget {
         //             JoystickEvent(degrees, distance),
         //           ),
         // ),
-        desktop: (_, __) => const SizedBox(),
+        desktop: (_, __) => const WasdInstructions(),
       );
 }

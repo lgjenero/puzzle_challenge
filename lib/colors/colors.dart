@@ -113,8 +113,20 @@ abstract class PuzzleColors {
   /// nide purple
   static const Color nicePurple = Color(0xFF805173);
 
-  /// nide purple
+  /// orange
   static const Color orange = Color(0xFFD2925F);
+
+  /// off white
+  static const Color offWhite = Color.fromARGB(255, 226, 208, 181);
+
+  // /// orange
+  // static const Color orange = Color(0xFFD2925F);
+
+  // /// orange
+  // static const Color orange = Color(0xFFD2925F);
+
+  // /// orange
+  // static const Color orange = Color(0xFFD2925F);
 
   // --- new colors ---
 

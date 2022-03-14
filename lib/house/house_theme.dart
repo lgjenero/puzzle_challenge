@@ -13,22 +13,22 @@ class HouseTheme extends PuzzleTheme {
   const HouseTheme() : super();
 
   @override
-  String get name => 'House';
+  String get name => 'Mansion';
 
   @override
   bool get hasTimer => false;
 
   @override
-  Color get nameColor => PuzzleColors.yellow50;
+  Color get nameColor => PuzzleColors.black2;
 
   @override
-  Color get titleColor => PuzzleColors.yellow90;
+  Color get titleColor => PuzzleColors.black;
 
   @override
-  Color get backgroundColor => PuzzleColors.purplePrimary;
+  Color get backgroundColor => PuzzleColors.offWhite;
 
   @override
-  Color get defaultColor => PuzzleColors.yellow50;
+  Color get defaultColor => PuzzleColors.black2;
 
   @override
   Color get buttonColor => PuzzleColors.yellowPrimary;
@@ -40,19 +40,19 @@ class HouseTheme extends PuzzleTheme {
   Color get pressedColor => PuzzleColors.yellowPrimary;
 
   @override
-  bool get isLogoColored => false;
+  bool get isLogoColored => true;
 
   @override
-  Color get menuActiveColor => PuzzleColors.yellow90;
+  Color get menuActiveColor => PuzzleColors.black;
 
   @override
-  Color get menuUnderlineColor => PuzzleColors.yellow90;
+  Color get menuUnderlineColor => PuzzleColors.black;
 
   @override
-  Color get menuInactiveColor => PuzzleColors.yellowPrimary;
+  Color get menuInactiveColor => PuzzleColors.black2;
 
   @override
-  Color get tileOutlineColor => PuzzleColors.yellow90;
+  Color get tileOutlineColor => PuzzleColors.purplePrimary;
 
   @override
   String get audioControlOnAsset => 'assets/images/audio_control/simple_on.png';

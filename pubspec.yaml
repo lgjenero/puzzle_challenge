@@ -1,5 +1,5 @@
 name: very_good_slide_puzzle
-description: A Very Good Project created by Very Good CLI.
+description: Game within a Slide Puzzle Game.
 version: 1.0.0+1
 publish_to: none
 
@@ -13,6 +13,7 @@ dependencies:
   equatable: ^2.0.3
   fake_async: ^1.2.0
   flame: ^1.0.0
+  flame_audio: ^1.0.0
   flame_tiled: ^1.2.1
   flutter:
     sdk: flutter

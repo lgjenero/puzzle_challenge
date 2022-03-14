@@ -1,3 +1,4 @@
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:html';
 
 import 'package:very_good_slide_puzzle/flame/lifecycle/lifecycle.dart';

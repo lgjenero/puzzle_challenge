@@ -75,7 +75,7 @@ class DoorComponent extends FlamePuzzleAnimationComponent
       animation: SpriteAnimation.spriteList(
         [
           await Sprite.load(
-            'tiles/Dungeon@64x64.png',
+            'tiles/Dungeon.png',
             srcPosition: orientation._spriteLocation,
             srcSize: orientation._spriteSize,
           ),

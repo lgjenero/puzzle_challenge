@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:very_good_slide_puzzle/flame/flame_puzzle.dart';
+import 'package:very_good_slide_puzzle/flame/views/wasd_instructions.dart';
 import 'package:very_good_slide_puzzle/house/house.dart';
 import 'package:very_good_slide_puzzle/joystick/joystick_view.dart';
 import 'package:very_good_slide_puzzle/l10n/l10n.dart';
@@ -8,6 +9,7 @@ import 'package:very_good_slide_puzzle/layout/layout.dart';
 import 'package:very_good_slide_puzzle/models/models.dart' as puzzle;
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
+import 'package:very_good_slide_puzzle/typography/typography.dart';
 
 /// {@template house_puzzle_layout_delegate}
 /// A delegate for computing the layout of the puzzle UI
@@ -186,6 +188,6 @@ class HousePuzzleJoystick extends StatelessWidget {
         //             JoystickEvent(degrees, distance),
         //           ),
         // ),
-        desktop: (_, __) => const SizedBox(),
+        desktop: (_, __) => const WasdInstructions(),
       );
 }

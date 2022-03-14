@@ -1,11 +1,14 @@
 import 'dart:async';
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:bonfire/bonfire.dart';
 import 'package:collection/collection.dart';
 import 'package:flame/game.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tiled/tiled.dart';
+import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
 import 'package:very_good_slide_puzzle/flame/flame_puzzle.dart';
 import 'package:very_good_slide_puzzle/flame/lifecycle/lifecycle.dart';
 import 'package:very_good_slide_puzzle/flame/objects/objects.dart';
@@ -50,17 +53,25 @@ class _FlamePuzzleGameBoardState extends State<FlamePuzzleGameBoard>
 
   final GlobalKey _gameKey = GlobalKey();
 
+  AudioPlayer? _audioPlayer;
+
   @override
   void initState() {
     super.initState();
     _game = widget.gameBuilder(widget.tiles, widget.spacing, context);
     registerLifecycleObserver(this);
+
+    FlameAudio.loopLongAudio('background.mp3', volume: 0.05)
+        .then((value) => _audioPlayer = value);
   }
 
   @override
   void dispose() {
     _focusNode.dispose();
     unregisterLifecycleObserver(this);
+    _audioPlayer
+      ?..stop()
+      ..dispose();
     super.dispose();
   }
 
@@ -73,15 +84,29 @@ class _FlamePuzzleGameBoardState extends State<FlamePuzzleGameBoard>
   @override
   Widget build(BuildContext context) {
     Future.delayed(Duration.zero, _focusNode.requestFocus);
-    return BlocListener<PuzzleBloc, PuzzleState>(
-      listener: (context, state) {
-        _game.joystick(state.joystick.toVector2());
-        if (state.puzzleStatus == PuzzleStatus.complete) {
-          _game.puzzleComplete();
-        } else if (state.puzzleStatus == PuzzleStatus.incomplete) {
-          _game.reset();
-        }
-      },
+    return MultiBlocListener(
+      listeners: [
+        BlocListener<PuzzleBloc, PuzzleState>(
+          listener: (context, state) {
+            _game.joystick(state.joystick.toVector2());
+            if (state.puzzleStatus == PuzzleStatus.complete) {
+              _game.puzzleComplete();
+            } else if (state.puzzleStatus == PuzzleStatus.incomplete) {
+              _game.reset();
+            }
+          },
+        ),
+        BlocListener<AudioControlBloc, AudioControlState>(
+          listener: (context, state) {
+            if (state.muted) {
+              _audioPlayer?.pause();
+            } else {
+              _audioPlayer?.resume();
+            }
+            _game.enableSound(enable: !state.muted);
+          },
+        ),
+      ],
       child: GameWidget(
         key: _gameKey,
         game: _game,
@@ -104,6 +129,18 @@ class _FlamePuzzleGameBoardState extends State<FlamePuzzleGameBoard>
           break;
       }
     }
+  }
+
+  void setupAudio(AudioPlayer audioPlayer) {
+    _audioPlayer = audioPlayer;
+
+    final muted = context.read<AudioControlBloc>().state.muted;
+    if (!muted) {
+      audioPlayer.resume();
+    } else {
+      audioPlayer.pause();
+    }
+    _game.enableSound(enable: !muted);
   }
 }
 
@@ -134,6 +171,9 @@ mixin FlamePuzzleGame on FlameGame {
 
   /// Flame puzzle game offset
   late final Vector2 offset;
+
+  /// Flame puzzle game audio muted
+  bool muted = false;
 
   /// Player component
   FlamePuzzleComponent? get player => objects
@@ -311,5 +351,9 @@ mixin FlamePuzzleGame on FlameGame {
   /// Puzzle complete
   void puzzleComplete() {}
 
+  /// Reset the game
   void reset() {}
+
+  /// Enable/disable sound
+  void enableSound({required bool enable}) => muted = !enable;
 }

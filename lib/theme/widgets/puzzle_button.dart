@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:very_good_slide_puzzle/colors/colors.dart';
+import 'package:very_good_slide_puzzle/layout/platform_layout_builder.dart';
 import 'package:very_good_slide_puzzle/theme/theme.dart';
 import 'package:very_good_slide_puzzle/typography/typography.dart';
 
@@ -37,24 +38,32 @@ class PuzzleButton extends StatelessWidget {
     final buttonTextColor = textColor ?? PuzzleColors.white;
     final buttonBackgroundColor = backgroundColor ?? theme.buttonColor;
 
-    return SizedBox(
-      width: 145,
-      height: 44,
-      child: AnimatedTextButton(
-        duration: PuzzleThemeAnimationDuration.textStyle,
-        style: TextButton.styleFrom(
-          padding: EdgeInsets.zero,
-          textStyle: PuzzleTextStyle.headline5,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(24),
+    return PlatformLayoutBuilder(
+      mobile: (_, child) => child!,
+      desktop: (_, child) => child!,
+      child: (platform) {
+        final height = platform == PlatformLayout.mobile ? 36.0 : 44.0;
+
+        return SizedBox(
+          width: 145,
+          height: height,
+          child: AnimatedTextButton(
+            duration: PuzzleThemeAnimationDuration.textStyle,
+            style: TextButton.styleFrom(
+              padding: EdgeInsets.zero,
+              textStyle: PuzzleTextStyle.headline5,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(24),
+              ),
+            ).copyWith(
+              backgroundColor: MaterialStateProperty.all(buttonBackgroundColor),
+              foregroundColor: MaterialStateProperty.all(buttonTextColor),
+            ),
+            onPressed: onPressed,
+            child: child,
           ),
-        ).copyWith(
-          backgroundColor: MaterialStateProperty.all(buttonBackgroundColor),
-          foregroundColor: MaterialStateProperty.all(buttonTextColor),
-        ),
-        onPressed: onPressed,
-        child: child,
-      ),
+        );
+      },
     );
   }
 }

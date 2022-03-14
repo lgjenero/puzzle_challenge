@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flame/game.dart';
 import 'package:flame/input.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -40,6 +41,8 @@ class PlatformGame extends FlameGame
       }
     }
     this.tiles = tiles;
+
+    if (!muted) FlameAudio.play('tile_move.mp3');
   }
 
   WizardComponent? get _wizardPlayer => player as WizardComponent?;
@@ -71,19 +74,26 @@ class PlatformGame extends FlameGame
     await addTilesInMap(map);
     await addDecorationsInMap(map);
     await addBoundariesInMap(map);
-    await addBoundariesInMap(map);
     await addObjectsInMap(map);
+    await super.onLoad();
   }
 
   @override
   void onTapDown(TapDownInfo info) {
     if (_puzzleCompleted) return;
 
-    final touchPoint = info.eventPosition.viewport;
-    final x =
-        (touchPoint.x / map.flamePuzzleTileMap.puzzleTileWidth).floor() + 1;
-    final y =
-        (touchPoint.y / map.flamePuzzleTileMap.puzzleTileWidth).floor() + 1;
+    final touchPoint = info.eventPosition.viewport - offset;
+    final tileWidth = map.flamePuzzleTileMap.puzzleTileWidth;
+    final tileHeight = map.flamePuzzleTileMap.puzzleTileHeight;
+    final x = (touchPoint.x / tileWidth).floor() + 1;
+    final y = (touchPoint.y / tileHeight).floor() + 1;
+
+    if (x < 0 ||
+        y < 0 ||
+        x > map.flamePuzzleTileMap.puzzleWidth ||
+        y > map.flamePuzzleTileMap.puzzleHeight) {
+      return;
+    }
 
     final tile = tiles.firstWhere(
       (tile) => tile.currentPosition == game.Position(x: x, y: y),
@@ -160,6 +170,8 @@ class PlatformGame extends FlameGame
       for (final tile in flamePuzzleTiles.values) {
         tile.setCompleted();
       }
+
+      if (!muted) FlameAudio.play('success.mp3');
     });
   }
 
@@ -167,5 +179,7 @@ class PlatformGame extends FlameGame
   void reset() {
     if (!_puzzleCompleted) return;
     _puzzleCompleted = false;
+
+    if (!muted) FlameAudio.play('tile_move.mp3');
   }
 }

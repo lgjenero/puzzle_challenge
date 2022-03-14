@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flame/game.dart';
 import 'package:flame/input.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -41,6 +42,8 @@ class DungeonGame extends FlameGame
       }
     }
     this.tiles = tiles;
+
+    if (!muted) FlameAudio.play('tile_move.mp3');
   }
 
   PeasantComponent? get _paesantPlayer => player as PeasantComponent?;
@@ -78,11 +81,18 @@ class DungeonGame extends FlameGame
   void onTapDown(TapDownInfo info) {
     if (_puzzleCompleted) return;
 
-    final touchPoint = info.eventPosition.viewport;
-    final tileWidth = camera.viewport.effectiveSize.x / 4;
-    final tileHeight = camera.viewport.effectiveSize.y / 4;
+    final touchPoint = info.eventPosition.viewport - offset;
+    final tileWidth = map.flamePuzzleTileMap.puzzleTileWidth;
+    final tileHeight = map.flamePuzzleTileMap.puzzleTileHeight;
     final x = (touchPoint.x / tileWidth).floor() + 1;
     final y = (touchPoint.y / tileHeight).floor() + 1;
+
+    if (x < 0 ||
+        y < 0 ||
+        x > map.flamePuzzleTileMap.puzzleWidth ||
+        y > map.flamePuzzleTileMap.puzzleHeight) {
+      return;
+    }
 
     final tile = tiles
         .firstWhere((tile) => tile.currentPosition == Position(x: x, y: y));
@@ -164,6 +174,8 @@ class DungeonGame extends FlameGame
     // find bandit
     (collidables.firstWhere((e) => e is BanditComponent) as BanditComponent)
         .attack(player);
+
+    if (!muted) FlameAudio.play('sandwich.mp3');
   }
 
   @override
@@ -176,6 +188,8 @@ class DungeonGame extends FlameGame
 
     // stop player
     player.movement = Vector2.zero();
+
+    if (!muted) FlameAudio.play('success.mp3');
   }
 
   @override
@@ -205,6 +219,8 @@ class DungeonGame extends FlameGame
       for (final tile in flamePuzzleTiles.values) {
         tile.setCompleted();
       }
+
+      if (!muted) FlameAudio.play('success.mp3');
     });
   }
 
@@ -212,5 +228,7 @@ class DungeonGame extends FlameGame
   void reset() {
     if (!_puzzleCompleted) return;
     _puzzleCompleted = false;
+
+    if (!muted) FlameAudio.play('tile_move.mp3');
   }
 }

@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:ui';
 
 import 'package:flame/components.dart';
@@ -14,7 +15,13 @@ class TexturepackerLoader {
     String dataPath, {
     List<String>? animations,
   }) async {
-    final json = await Flame.assets.readJson(dataPath);
+    final Map<String, dynamic> json;
+    try {
+      json = await Flame.assets.readJson(dataPath);
+    } catch (ex) {
+      log('JSON atlas not found: $dataPath');
+      return {};
+    }
 
     final dynamic jsonFrames = json['frames'];
 
@@ -104,7 +111,10 @@ class TexturepackerLoader {
     final animation =
         filename.substring(0, filename.length - matchString.length).trim();
 
-    final frameIdx = int.tryParse(matchString);
+    final idxString = match.group(1);
+    if (idxString == null) return null;
+
+    final frameIdx = int.tryParse(idxString);
     if (frameIdx == null) return null;
 
     final Vector4 srcInsets;
@@ -157,7 +167,8 @@ class TexturepackerLoader {
     );
   }
 
-  static final RegExp _regExp = RegExp(r'\d+$', caseSensitive: false);
+  static final RegExp _regExp =
+      RegExp(r'(\d+)(\.png|\.jpg\.jpeg)$', caseSensitive: false);
 }
 
 class _SpriteInfo {

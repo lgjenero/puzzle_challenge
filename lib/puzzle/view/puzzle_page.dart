@@ -210,7 +210,7 @@ class PuzzleSections extends StatelessWidget {
                         ? constraints.maxHeight
                         : constraints.maxHeight / 2
                     : platform == PlatformLayout.desktop
-                        ? 180
+                        ? 200
                         : 150,
                 width: orientation == OrientationLayout.landscape
                     ? platform == PlatformLayout.desktop
@@ -221,18 +221,24 @@ class PuzzleSections extends StatelessWidget {
                 child: theme.layoutDelegate.statusSectionBuilder(state),
               ),
               AnimatedPositioned(
-                left: 0,
+                left: platform == PlatformLayout.mobile
+                    ? 0
+                    : orientation == OrientationLayout.landscape
+                        ? 300
+                        : 0,
                 bottom: platform == PlatformLayout.mobile
                     ? orientation == OrientationLayout.landscape
                         ? ((constraints.maxHeight / 2 - 50) - 100) / 2
                         : 0
                     : 0,
-                height: platform == PlatformLayout.mobile ? 100 : 0,
-                width: orientation == OrientationLayout.landscape
-                    ? platform == PlatformLayout.desktop
-                        ? 300
-                        : 200
-                    : constraints.maxWidth,
+                height: platform == PlatformLayout.mobile ? 100 : 30,
+                width: platform == PlatformLayout.desktop
+                    ? orientation == OrientationLayout.landscape
+                        ? constraints.maxWidth - 300
+                        : constraints.maxWidth
+                    : orientation == OrientationLayout.landscape
+                        ? 200
+                        : constraints.maxWidth,
                 duration: PuzzleThemeAnimationDuration.layoutChange,
                 child: theme.layoutDelegate.joystyickSectionBuilder(state),
               ),
@@ -241,7 +247,7 @@ class PuzzleSections extends StatelessWidget {
                     ? 50
                     : platform == PlatformLayout.desktop
                         ? 280
-                        : 260,
+                        : 235,
                 left: orientation == OrientationLayout.landscape ? 300 : 0,
                 bottom: platform == PlatformLayout.mobile
                     ? orientation == OrientationLayout.landscape

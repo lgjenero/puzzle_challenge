@@ -50,6 +50,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.6+1"
+  audioplayers:
+    dependency: transitive
+    description:
+      name: audioplayers
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.20.1"
   bloc:
     dependency: "direct main"
     description:
@@ -173,6 +180,13 @@ packages:
     dependency: "direct main"
     description:
       name: flame
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
+  flame_audio:
+    dependency: "direct main"
+    description:
+      name: flame_audio
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
@@ -565,6 +579,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+  synchronized:
+    dependency: transitive
+    description:
+      name: synchronized
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.0"
   term_glyph:
     dependency: transitive
     description:

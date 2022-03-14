@@ -88,7 +88,7 @@ class PlantComponent extends FlamePuzzleAnimationComponent
         'sprites/plants/${type.name}/idle_$i.png',
         'images/sprites/plants/${type.name}/idle_$i.json',
       );
-      sprites.addAll(packedSprites.values.first);
+      if (packedSprites.isNotEmpty) sprites.addAll(packedSprites.values.first);
     }
 
     final animation = SpriteAnimation.spriteList(

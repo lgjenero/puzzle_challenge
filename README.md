@@ -1,4 +1,4 @@
-# Game withi a Slide Puzzle Game
+# Game within a Slide Puzzle Game
 
 A slide puzzle built for [Flutter Challenge](https://flutterhack.devpost.com/).
 

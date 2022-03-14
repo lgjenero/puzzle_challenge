@@ -4,7 +4,7 @@ part of 'audio_control_bloc.dart';
 
 class AudioControlState extends Equatable {
   const AudioControlState({
-    this.muted = false,
+    this.muted = true,
   });
 
   /// Whether the audio is muted.

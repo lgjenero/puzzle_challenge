@@ -45,7 +45,7 @@ class WizardComponent extends FlamePuzzleDirectionAnimationComponent
     required Vector2 size,
     bool isOverlay = false,
     double speed = 35,
-    double gravity = 10,
+    double gravity = 1000,
     double gravityMax = 80,
     double jumpSpeed = 280,
   }) async {
@@ -174,7 +174,7 @@ class WizardComponent extends FlamePuzzleDirectionAnimationComponent
       _velocity.y = -jumpSpeed;
       _isOnGround = false;
     } else {
-      _velocity.y = (_velocity.y + gravity).clamp(-jumpSpeed, gravityMax);
+      _velocity.y = (_velocity.y + gravity * dt).clamp(-jumpSpeed, gravityMax);
     }
     position += _velocity * dt;
 

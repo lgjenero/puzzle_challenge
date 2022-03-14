@@ -33,13 +33,13 @@ class LeverComponent extends FlamePuzzleAnimationComponent
         [
           await Sprite.load(
             'tiles/Dungeon.png',
-            srcPosition: Vector2(13 * 64, 12 * 64),
-            srcSize: Vector2(64, 64),
+            srcPosition: Vector2(13 * 32, 12 * 32),
+            srcSize: Vector2(32, 32),
           ),
           await Sprite.load(
             'tiles/Dungeon.png',
-            srcPosition: Vector2(9 * 64, 15 * 64),
-            srcSize: Vector2(64, 64),
+            srcPosition: Vector2(9 * 32, 15 * 32),
+            srcSize: Vector2(32, 32),
           ),
         ],
         stepTime: 0.25,

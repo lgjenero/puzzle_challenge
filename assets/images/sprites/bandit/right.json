@@ -2,531 +2,531 @@
 
 {
 	"filename": "Side Bow Character 9 01.png",
-	"frame": {"x":1,"y":1,"w":16,"h":28},
+	"frame": {"x":1,"y":1,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Bow Character 9 02.png",
-	"frame": {"x":19,"y":1,"w":17,"h":28},
+	"frame": {"x":63,"y":1,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":14,"w":17,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":98,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Bow Character 9 03.png",
-	"frame": {"x":38,"y":1,"w":18,"h":28},
+	"frame": {"x":125,"y":1,"w":63,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":14,"w":18,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":99,"y":60,"w":63,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Bow Character 9 04.png",
-	"frame": {"x":58,"y":1,"w":18,"h":28},
+	"frame": {"x":190,"y":1,"w":68,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":18,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":94,"y":60,"w":68,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Bow Character 9 05.png",
-	"frame": {"x":78,"y":1,"w":18,"h":28},
+	"frame": {"x":260,"y":1,"w":67,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":18,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":94,"y":60,"w":67,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Bow Character 9 06.png",
-	"frame": {"x":98,"y":1,"w":18,"h":28},
+	"frame": {"x":329,"y":1,"w":67,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":18,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":94,"y":60,"w":67,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Bow Character 9 07.png",
-	"frame": {"x":1,"y":31,"w":16,"h":28},
+	"frame": {"x":398,"y":1,"w":59,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":59,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Cast Character 9 01.png",
-	"frame": {"x":19,"y":31,"w":16,"h":28},
+	"frame": {"x":1,"y":108,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Cast Character 9 02.png",
-	"frame": {"x":37,"y":31,"w":18,"h":29},
+	"frame": {"x":63,"y":108,"w":66,"h":106},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":22,"y":13,"w":18,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":90,"y":58,"w":66,"h":106},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Cast Character 9 03.png",
-	"frame": {"x":57,"y":31,"w":18,"h":28},
+	"frame": {"x":131,"y":108,"w":67,"h":103},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":18,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":92,"y":62,"w":67,"h":103},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Cast Character 9 04.png",
-	"frame": {"x":77,"y":31,"w":20,"h":27},
+	"frame": {"x":200,"y":108,"w":73,"h":102},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":25,"y":15,"w":20,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":102,"y":63,"w":73,"h":102},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Cast Character 9 05.png",
-	"frame": {"x":99,"y":31,"w":19,"h":27},
+	"frame": {"x":275,"y":108,"w":71,"h":102},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":26,"y":15,"w":19,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":104,"y":63,"w":71,"h":102},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Cast Character 9 06.png",
-	"frame": {"x":1,"y":62,"w":18,"h":29},
+	"frame": {"x":348,"y":108,"w":64,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":25,"y":14,"w":18,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":102,"y":61,"w":64,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 01.png",
-	"frame": {"x":21,"y":62,"w":16,"h":28},
+	"frame": {"x":414,"y":108,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 02.png",
-	"frame": {"x":39,"y":62,"w":15,"h":29},
+	"frame": {"x":1,"y":216,"w":59,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":26,"y":14,"w":15,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":104,"y":61,"w":59,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 03.png",
-	"frame": {"x":56,"y":62,"w":18,"h":28},
+	"frame": {"x":62,"y":216,"w":70,"h":103},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":15,"w":18,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":107,"y":63,"w":70,"h":103},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 04.png",
-	"frame": {"x":76,"y":62,"w":15,"h":29},
+	"frame": {"x":134,"y":216,"w":61,"h":108},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":27,"y":12,"w":15,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":106,"y":53,"w":61,"h":108},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 05.png",
-	"frame": {"x":93,"y":62,"w":22,"h":26},
+	"frame": {"x":197,"y":216,"w":81,"h":95},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":17,"y":12,"w":22,"h":26},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":72,"y":53,"w":81,"h":95},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 06.png",
-	"frame": {"x":1,"y":93,"w":29,"h":16},
+	"frame": {"x":280,"y":216,"w":110,"h":58},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":15,"y":19,"w":29,"h":16},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":63,"y":78,"w":110,"h":58},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 07.png",
-	"frame": {"x":32,"y":93,"w":27,"h":16},
+	"frame": {"x":392,"y":216,"w":100,"h":58},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":15,"y":26,"w":27,"h":16},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":65,"y":109,"w":100,"h":58},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 08.png",
-	"frame": {"x":61,"y":93,"w":29,"h":16},
+	"frame": {"x":1,"y":326,"w":104,"h":59},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":15,"y":29,"w":29,"h":16},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":66,"y":118,"w":104,"h":59},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Die Character 9 09.png",
-	"frame": {"x":92,"y":93,"w":29,"h":16},
+	"frame": {"x":107,"y":326,"w":105,"h":60},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":15,"y":30,"w":29,"h":16},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":66,"y":120,"w":105,"h":60},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Hurt Character 9 01.png",
-	"frame": {"x":1,"y":111,"w":16,"h":28},
+	"frame": {"x":214,"y":326,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Hurt Character 9 02.png",
-	"frame": {"x":19,"y":111,"w":16,"h":27},
+	"frame": {"x":276,"y":326,"w":57,"h":101},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":13,"w":16,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":55,"w":57,"h":101},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Hurt Character 9 03.png",
-	"frame": {"x":37,"y":111,"w":16,"h":27},
+	"frame": {"x":335,"y":326,"w":57,"h":101},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":13,"w":16,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":55,"w":57,"h":101},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Hurt Character 9 04.png",
-	"frame": {"x":55,"y":111,"w":16,"h":29},
+	"frame": {"x":394,"y":326,"w":59,"h":104},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":13,"w":16,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":58,"w":59,"h":104},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Hurt Character 9 05.png",
-	"frame": {"x":73,"y":111,"w":16,"h":28},
+	"frame": {"x":1,"y":433,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Idle Character 9 01.png",
-	"frame": {"x":91,"y":111,"w":16,"h":28},
+	"frame": {"x":63,"y":433,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Idle Character 9 02.png",
-	"frame": {"x":109,"y":111,"w":16,"h":28},
+	"frame": {"x":125,"y":433,"w":59,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":59,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Idle Character 9 03.png",
-	"frame": {"x":1,"y":142,"w":16,"h":28},
+	"frame": {"x":186,"y":433,"w":59,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":59,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Idle Character 9 04.png",
-	"frame": {"x":19,"y":142,"w":15,"h":28},
+	"frame": {"x":247,"y":433,"w":59,"h":106},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":15,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":59,"w":59,"h":106},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Idle Character 9 05.png",
-	"frame": {"x":36,"y":142,"w":15,"h":28},
+	"frame": {"x":308,"y":433,"w":56,"h":106},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":15,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":97,"y":59,"w":56,"h":106},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Idle Character 9 06.png",
-	"frame": {"x":53,"y":142,"w":15,"h":28},
+	"frame": {"x":366,"y":433,"w":59,"h":106},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":15,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":59,"w":59,"h":106},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Idle Character 9 07.png",
-	"frame": {"x":70,"y":142,"w":16,"h":28},
+	"frame": {"x":427,"y":433,"w":59,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":59,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 01.png",
-	"frame": {"x":88,"y":142,"w":16,"h":28},
+	"frame": {"x":1,"y":541,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 02.png",
-	"frame": {"x":106,"y":142,"w":16,"h":28},
+	"frame": {"x":63,"y":541,"w":57,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":101,"y":60,"w":57,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 03.png",
-	"frame": {"x":1,"y":172,"w":15,"h":28},
+	"frame": {"x":122,"y":541,"w":59,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":25,"y":14,"w":15,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":102,"y":60,"w":59,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 04.png",
-	"frame": {"x":18,"y":172,"w":16,"h":28},
+	"frame": {"x":183,"y":541,"w":61,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":60,"w":61,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 05.png",
-	"frame": {"x":36,"y":172,"w":19,"h":28},
+	"frame": {"x":246,"y":541,"w":73,"h":103},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":20,"y":14,"w":19,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":81,"y":62,"w":73,"h":103},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 06.png",
-	"frame": {"x":57,"y":172,"w":19,"h":27},
+	"frame": {"x":321,"y":541,"w":72,"h":102},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":19,"y":15,"w":19,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":79,"y":63,"w":72,"h":102},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 07.png",
-	"frame": {"x":78,"y":172,"w":20,"h":28},
+	"frame": {"x":395,"y":541,"w":75,"h":103},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":20,"y":14,"w":20,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":81,"y":62,"w":75,"h":103},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 08.png",
-	"frame": {"x":100,"y":172,"w":18,"h":28},
+	"frame": {"x":1,"y":648,"w":70,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":22,"y":14,"w":18,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":88,"y":60,"w":70,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Pickup Character 9 09.png",
-	"frame": {"x":1,"y":202,"w":16,"h":28},
+	"frame": {"x":73,"y":648,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":94,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 01.png",
-	"frame": {"x":19,"y":202,"w":16,"h":27},
+	"frame": {"x":135,"y":648,"w":61,"h":97},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":12,"w":16,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":54,"w":61,"h":97},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 02.png",
-	"frame": {"x":37,"y":202,"w":17,"h":26},
+	"frame": {"x":198,"y":648,"w":62,"h":95},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":13,"w":17,"h":26},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":55,"w":62,"h":95},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 03.png",
-	"frame": {"x":56,"y":202,"w":16,"h":27},
+	"frame": {"x":262,"y":648,"w":60,"h":96},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":13,"w":16,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":58,"w":60,"h":96},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 04.png",
-	"frame": {"x":74,"y":202,"w":15,"h":27},
+	"frame": {"x":324,"y":648,"w":60,"h":100},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":14,"w":15,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":60,"w":60,"h":100},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 05.png",
-	"frame": {"x":91,"y":202,"w":15,"h":29},
+	"frame": {"x":386,"y":648,"w":60,"h":104},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":13,"w":15,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":58,"w":60,"h":104},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 06.png",
-	"frame": {"x":108,"y":202,"w":17,"h":27},
+	"frame": {"x":1,"y":755,"w":62,"h":102},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":13,"w":17,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":55,"w":62,"h":102},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 07.png",
-	"frame": {"x":1,"y":233,"w":17,"h":26},
+	"frame": {"x":65,"y":755,"w":62,"h":95},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":13,"w":17,"h":26},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":55,"w":62,"h":95},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 08.png",
-	"frame": {"x":20,"y":233,"w":17,"h":26},
+	"frame": {"x":129,"y":755,"w":60,"h":92},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":13,"w":17,"h":26},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":58,"w":60,"h":92},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 09.png",
-	"frame": {"x":39,"y":233,"w":15,"h":27},
+	"frame": {"x":191,"y":755,"w":60,"h":99},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":14,"w":15,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":60,"w":60,"h":99},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Run Character 9 10.png",
-	"frame": {"x":56,"y":233,"w":15,"h":27},
+	"frame": {"x":253,"y":755,"w":60,"h":98},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":24,"y":13,"w":15,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":96,"y":58,"w":60,"h":98},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Swing Character 9 01.png",
-	"frame": {"x":73,"y":233,"w":16,"h":28},
+	"frame": {"x":315,"y":755,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Swing Character 9 02.png",
-	"frame": {"x":91,"y":233,"w":17,"h":29},
+	"frame": {"x":377,"y":755,"w":64,"h":106},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":13,"w":17,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":92,"y":58,"w":64,"h":106},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Swing Character 9 03.png",
-	"frame": {"x":1,"y":264,"w":18,"h":28},
+	"frame": {"x":443,"y":755,"w":64,"h":104},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":18,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":61,"w":64,"h":104},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Swing Character 9 04.png",
-	"frame": {"x":21,"y":264,"w":31,"h":33},
+	"frame": {"x":1,"y":863,"w":116,"h":125},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":25,"y":15,"w":31,"h":33},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":102,"y":62,"w":116,"h":125},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Swing Character 9 05.png",
-	"frame": {"x":54,"y":264,"w":30,"h":36},
+	"frame": {"x":119,"y":863,"w":114,"h":137},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":26,"y":15,"w":30,"h":36},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":104,"y":63,"w":114,"h":137},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Swing Character 9 06.png",
-	"frame": {"x":86,"y":264,"w":16,"h":36},
+	"frame": {"x":235,"y":863,"w":59,"h":134},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":25,"y":14,"w":16,"h":36},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":102,"y":61,"w":59,"h":134},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Thrust Character 9 01.png",
-	"frame": {"x":104,"y":264,"w":16,"h":28},
+	"frame": {"x":296,"y":863,"w":60,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":23,"y":14,"w":16,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":95,"y":60,"w":60,"h":105},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Thrust Character 9 02.png",
-	"frame": {"x":1,"y":302,"w":29,"h":29},
+	"frame": {"x":358,"y":863,"w":108,"h":106},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":20,"y":13,"w":29,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":85,"y":58,"w":108,"h":106},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Thrust Character 9 03.png",
-	"frame": {"x":32,"y":302,"w":29,"h":28},
+	"frame": {"x":1,"y":1002,"w":108,"h":103},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":21,"y":14,"w":29,"h":28},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":89,"y":62,"w":108,"h":103},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Thrust Character 9 04.png",
-	"frame": {"x":63,"y":302,"w":37,"h":27},
+	"frame": {"x":111,"y":1002,"w":142,"h":102},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":25,"y":15,"w":37,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":102,"y":63,"w":142,"h":102},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Thrust Character 9 05.png",
-	"frame": {"x":1,"y":333,"w":36,"h":27},
+	"frame": {"x":255,"y":1002,"w":140,"h":102},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":26,"y":15,"w":36,"h":27},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":104,"y":63,"w":140,"h":102},
+	"sourceSize": {"w":256,"h":256}
 },
 {
 	"filename": "Side Thrust Character 9 06.png",
-	"frame": {"x":39,"y":333,"w":30,"h":29},
+	"frame": {"x":397,"y":1002,"w":112,"h":105},
 	"rotated": false,
 	"trimmed": true,
-	"spriteSourceSize": {"x":25,"y":14,"w":30,"h":29},
-	"sourceSize": {"w":64,"h":64}
+	"spriteSourceSize": {"x":102,"y":61,"w":112,"h":105},
+	"sourceSize": {"w":256,"h":256}
 }],
 "meta": {
 	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "right__0.png",
+	"image": "right_0.png",
 	"format": "RGBA8888",
-	"size": {"w":126,"h":363},
-	"scale": "0.25",
-	"smartupdate": "$TexturePacker:SmartUpdate:c7abebf4b9489f2280b3551e00edd5e0:7195652f8b816d34b14b4c0879506dee:c3c012e17867f94c4f97ae23ad1e2ba2$"
+	"size": {"w":510,"h":1108},
+	"scale": "0.5",
+	"smartupdate": "$TexturePacker:SmartUpdate:0cd4fe6683cbbcfcf223bcab8268b3a5:b273be696d89f72c2c3a8d493c202201:bcfbd53a6d0cdfff42726751e1f3ca4b$"
 }
 }

@@ -7,6 +7,7 @@ import 'package:flame/game.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:tiled/tiled.dart';
 import 'package:very_good_slide_puzzle/audio_control/audio_control.dart';
 import 'package:very_good_slide_puzzle/flame/flame_puzzle.dart';
@@ -15,6 +16,7 @@ import 'package:very_good_slide_puzzle/flame/objects/objects.dart';
 import 'package:very_good_slide_puzzle/models/models.dart' as puzzle;
 import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
 import 'package:very_good_slide_puzzle/theme/bloc/theme_bloc.dart';
+import 'package:very_good_slide_puzzle/theme/themes/themes.dart';
 
 /// {@template flame_puzzle_game_board}
 /// The Flame Puzzle game board.
@@ -55,10 +57,14 @@ class _FlamePuzzleGameBoardState extends State<FlamePuzzleGameBoard>
 
   AudioPlayer? _audioPlayer;
 
+  final StreamController<bool> _loadingController =
+      StreamController.broadcast();
+
   @override
   void initState() {
     super.initState();
-    _game = widget.gameBuilder(widget.tiles, widget.spacing, context);
+    _game = widget.gameBuilder(widget.tiles, widget.spacing, context)
+      ..onLoaded = () => _loadingController.add(false);
     registerLifecycleObserver(this);
 
     FlameAudio.loopLongAudio('background.mp3', volume: 0.05)
@@ -68,6 +74,7 @@ class _FlamePuzzleGameBoardState extends State<FlamePuzzleGameBoard>
   @override
   void dispose() {
     _focusNode.dispose();
+    _loadingController.close();
     unregisterLifecycleObserver(this);
     _audioPlayer
       ?..stop()
@@ -107,10 +114,29 @@ class _FlamePuzzleGameBoardState extends State<FlamePuzzleGameBoard>
           },
         ),
       ],
-      child: GameWidget(
-        key: _gameKey,
-        game: _game,
-        focusNode: _focusNode,
+      // child: GameWidget(
+      //   key: _gameKey,
+      //   game: _game,
+      //   focusNode: _focusNode,
+      // ),
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          StreamBuilder<bool>(
+            initialData: true,
+            stream: _loadingController.stream,
+            builder: (context, snapshot) => AnimatedOpacity(
+              opacity: snapshot.data == true ? 1 : 0,
+              duration: PuzzleThemeAnimationDuration.layoutChange,
+              child: const Center(child: FlameGameLoading()),
+            ),
+          ),
+          GameWidget(
+            key: _gameKey,
+            game: _game,
+            focusNode: _focusNode,
+          ),
+        ],
       ),
     );
   }
@@ -141,6 +167,22 @@ class _FlamePuzzleGameBoardState extends State<FlamePuzzleGameBoard>
       audioPlayer.pause();
     }
     _game.enableSound(enable: !muted);
+  }
+}
+
+/// Flame game loading view
+class FlameGameLoading extends StatelessWidget {
+  /// Flame game loading view
+  const FlameGameLoading({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = context.select((ThemeBloc bloc) => bloc.state.theme);
+
+    return LoadingAnimationWidget.staggeredDotsWave(
+      color: theme.defaultColor,
+      size: 100,
+    );
   }
 }
 
@@ -178,6 +220,15 @@ mixin FlamePuzzleGame on FlameGame {
   /// Player component
   FlamePuzzleComponent? get player => objects
       .firstWhereOrNull((e) => e.type == FlamePuzzleComponentType.player);
+
+  /// On loaded callback
+  Function()? onLoaded;
+
+  @override
+  Future<void>? onLoad() {
+    onLoaded?.call();
+    return super.onLoad();
+  }
 
   /// Updates the board setup
   void updateSetup(List<puzzle.Tile> tiles, double spacing);

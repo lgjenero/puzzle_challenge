@@ -26,23 +26,23 @@ extension _DoorOrientationUtils on DoorOrientation {
     switch (this) {
       case DoorOrientation.up:
       case DoorOrientation.down:
-        return Vector2(3 * 64, 64);
+        return Vector2(3 * 32, 32);
       case DoorOrientation.left:
       case DoorOrientation.right:
-        return Vector2(64, 3 * 64);
+        return Vector2(32, 3 * 32);
     }
   }
 
   Vector2 get _spriteLocation {
     switch (this) {
       case DoorOrientation.up:
-        return Vector2(0, 12 * 64);
+        return Vector2(0, 12 * 32);
       case DoorOrientation.down:
-        return Vector2(0, 12 * 64);
+        return Vector2(0, 12 * 32);
       case DoorOrientation.left:
-        return Vector2(3 * 64, 11 * 64);
+        return Vector2(3 * 32, 11 * 32);
       case DoorOrientation.right:
-        return Vector2(4 * 64, 11 * 64);
+        return Vector2(4 * 32, 11 * 32);
     }
   }
 }

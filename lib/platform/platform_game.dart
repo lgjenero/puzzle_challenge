@@ -56,8 +56,6 @@ class PlatformGame extends FlameGame
 
   @override
   Future<void> onLoad() async {
-    await super.onLoad();
-
     camera.viewport = FixedResolutionViewport(
       Vector2(
         192 + offset.x * 2,
